@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Congrats!</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <img src="Images/congrats.svg" class="congrats" alt="Congratulations">
+            <h3>Congratulations! <span id="username"></span></h3>
+            <h3>Your Marks <span id="finalScore"></span></h3>
+
+            <form>
+                <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)">
+                    Save
+                </button>
+            </form>
+            <a class="btn" href="/quiz.html">Play Again</a>
+            <a class="btn" href="/">Go Home</a>
+        </div>
+    </div>
+    <script src="js/end.js"></script>
+</body>
+
+</html>

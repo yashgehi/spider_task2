@@ -1,0 +1,275 @@
+:root {
+    background-color: #ecf5ff;
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 5.4rem;
+    color: #5ecccc;
+    margin-bottom: 5rem;
+}
+
+h1>span {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+/* image */
+
+.exam-img {
+    width: 30%;
+    padding: 1.2rem;
+}
+
+.congrats {
+    width: 30%;
+    margin-bottom: 5rem;
+}
+
+/* UTILITIES */
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.container>* {
+    width: 100%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* BUTTONS */
+
+.btn,
+.input {
+    padding: 1rem 0;
+    width: 20rem;
+    margin-bottom: 1rem;
+    border-radius: 30px;
+}
+
+.input {
+    width: 60%;
+}
+
+.btn,
+.choice-container,
+.input {
+    font-size: 1.8rem;
+    text-align: center;
+    border: 0.1rem solid #56a5eb;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: white;
+}
+
+.btn:hover,
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Quiz styling */
+
+.choice-container {
+    display: flex;
+    width: 60%;
+    /* text-align: center; */
+    margin-bottom: 0.5rem;
+    border-radius: 100px;
+}
+
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: #5ecccc;
+    color: white;
+}
+
+.choice-text {
+    padding: 1.5rem;
+    /* justify-content: center; */
+    padding-left: 3rem;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.next-question {
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+
+/* answer feedback */
+
+.correct {
+    background-color: #28a745;
+}
+
+.incorrect {
+    background-color: #dc3545;
+}
+
+/* highScores page */
+
+#highScoresList {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 4rem;
+}
+
+.high-score {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.high-score:hover {
+    transform: scale(1.025);
+}
+
+
+/* dropdown list */
+
+.dropbtn {
+    font-size: 1.8rem;
+    text-align: center;
+    border: 0.1rem solid #56a5eb;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: white;
+    cursor: pointer;
+    padding: 1rem 0;
+    width: 20rem;
+    margin-bottom: 1rem;
+    border-radius: 30px;
+    margin: 2rem 20rem;
+
+}
+
+.dropbtn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.dropbtn:focus {
+    outline: none;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin: 2rem 20rem;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+
+/* timer and score */
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+.time {
+    font-size: 3rem;
+    padding-top: 1rem;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Javascript Quiz - Play</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a id="one" onclick="buttonClicked(this.id)">Q1</a>
+            <a id="two" onclick="buttonClicked(this.id)">Q2</a>
+            <a id="three" onclick="buttonClicked(this.id)">Q3</a>
+            <a id="four" onclick="buttonClicked(this.id)">Q4</a>
+            <a id="five" onclick="buttonClicked(this.id)">Q5</a>
+            <a id="six" onclick="buttonClicked(this.id)">Q6</a>
+            <a id="seven" onclick="buttonClicked(this.id)">Q7</a>
+            <a id="eight" onclick="buttonClicked(this.id)">Q8</a>
+            <a id="nine" onclick="buttonClicked(this.id)">Q9</a>
+            <a id="ten" onclick="buttonClicked(this.id)">Q10</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="game" class="justify-center flex-column">
+            <div id="hud">
+                <div id="hud-item">
+                    <p class="hud-prefix">
+                        Score
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                        0
+                    </h1>
+                </div>
+                <div id="hud-item">
+                    <p class="hud-prefix">
+                        Timer
+                    </p>
+                    <span class="time">04:00</span>
+
+                </div>
+            </div>
+
+            <h2 id="question">What is the answer to this questions?</h2>
+            <div class="choice-container">
+                <!-- <p class="choice-prefix">A</p> -->
+                <p class="choice-text" data-number="1">Choice 1</p>
+            </div>
+            <div class="choice-container">
+                <!-- <p class="choice-prefix">B</p> -->
+                <p class="choice-text" data-number="2">Choice 2</p>
+            </div>
+            <div class="choice-container">
+                <!-- <p class="choice-prefix">C</p> -->
+                <p class="choice-text" data-number="3">Choice 3</p>
+            </div>
+            <div class="choice-container">
+                <!-- <p class="choice-prefix">D</p> -->
+                <p class="choice-text" data-number="4">Choice 4</p>
+            </div>
+
+            <a class="btn previous-question" onclick=" previous()">Previous question</a>
+
+            <a class="btn next-question" onclick="submit()">Next question</a>
+            <!-- <a class="btn next-question" onclick="getNewQuestion(questionCounter)">Submit</a> -->
+
+
+        </div>
+    </div>
+
+
+    <script src="js/timer.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+
+</html>
